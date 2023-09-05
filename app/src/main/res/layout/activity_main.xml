@@ -1,0 +1,183 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <!--  todo: [done] dimens ga tiq  butun file'dagi hard coded dimensionlarni-->
+    <!--  todo: [done] hamma id'larni kichkina harf bilan boshla va Layout'ni ismidan kelib chiq.   -->
+    <!--  todo:[done] bu_view_id -> buViewId (_ ishlatilinmasin) -->
+    <FrameLayout
+        android:id="@+id/tasbihView"
+        android:layout_width="@dimen/tasbih_view_width"
+        android:layout_height="@dimen/tasbih_view_height"
+        android:background="@drawable/tasbih_shape"
+        app:layout_constraintBottom_toTopOf="@+id/ibVibrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--    todo: [done] bu tasbeh bo'lsin    -->
+        <!--    todo: [done] padding'ga qara    -->
+        <TextView
+            android:id="@+id/tvCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/tvCounter_margin"
+            android:background="@drawable/rounded_textview"
+            android:fontFamily="@font/digital_7_mono"
+            android:padding="@dimen/little_padding"
+            android:text="@string/_000000"
+            android:textColor="@color/lightblue"
+            android:textSize="@dimen/enormous_text_size"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/tasbih_middle_buttons_margin_top">
+
+            <!--todo: [done] idsini o'zgartir -->
+            <!--todo: [done] odamga o'xshagan dimen ismlar bo'lsin -->
+            <ImageButton
+                android:id="@+id/ibDecrement"
+                android:layout_width="@dimen/small_ib_dimension"
+                android:layout_height="@dimen/small_ib_dimension"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/large_padding"
+                android:background="@drawable/circle_button_selector"
+                android:src="@drawable/ic_count_back"/>
+
+            <ImageButton
+                android:id="@+id/ibReset"
+                android:layout_width="@dimen/small_ib_dimension"
+                android:layout_height="@dimen/small_ib_dimension"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/little_ib_dimension"
+                android:background="@drawable/circle_button_selector"
+                android:src="@drawable/ic_restart"/>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/ibCounter"
+            android:layout_width="@dimen/big_ib_dimension"
+            android:layout_height="@dimen/big_ib_dimension"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="@dimen/huge_ib_dimesion"
+            android:background="@drawable/big_circle_selector" />
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/ibMenu"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginStart="@dimen/small_ib_margin"
+        android:layout_marginTop="@dimen/small_ib_margin"
+        android:background="@drawable/circle_button_grey_selector"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tasbihText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/counter_pro"
+        android:textColor="@color/white"
+        android:textSize="@dimen/larger_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/ibMenu"
+        app:layout_constraintEnd_toStartOf="@+id/ibSave"
+        app:layout_constraintStart_toEndOf="@+id/ibMenu"
+        app:layout_constraintTop_toTopOf="@+id/ibMenu"/>
+
+    <!-- todo:[done] marginlarsiz centerla buni  -->
+    <TextView
+        android:id="@+id/currentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/huge_ib_dimesion"
+        android:layout_marginTop="@dimen/tiny_ib_margin"
+        android:layout_marginEnd="@dimen/huge_ib_dimesion"
+        android:text="@string/_000000"
+        android:textColor="@color/white"
+        android:textSize="@dimen/large_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasbihText"/>
+
+    <ImageButton
+        android:id="@+id/ibSave"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginTop="@dimen/small_ib_margin"
+        android:layout_marginEnd="@dimen/small_ib_margin"
+        android:background="@drawable/circle_button_selector"
+        android:src="@drawable/ic_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/ibSoundOnAndOff"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginBottom="@dimen/medium_padding"
+        android:background="@drawable/circle_button_selector"
+        android:src="@drawable/ic_sound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibVibrate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ibVibrate"/>
+
+    <ImageButton
+        android:id="@+id/ibVibrate"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginBottom="@dimen/little_ib_margin"
+        android:background="@drawable/circle_button_selector"
+        android:src="@drawable/ic_vibrate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnList"
+        app:layout_constraintStart_toEndOf="@+id/ibSoundOnAndOff"
+        app:layout_constraintTop_toTopOf="@+id/btnList"/>
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="@dimen/medium_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginBottom="@dimen/little_ib_margin"
+        android:background="@drawable/circle_button_grey_selector"
+        android:text="@string/list"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibTheme"
+        app:layout_constraintStart_toEndOf="@+id/ibVibrate"
+        app:layout_constraintTop_toTopOf="@+id/ibTheme"/>
+
+    <ImageButton
+        android:id="@+id/ibTheme"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginBottom="@dimen/little_ib_margin"
+        android:background="@drawable/circle_button_grey_selector"
+        android:src="@drawable/ic_theme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ibLightMode"
+        app:layout_constraintStart_toEndOf="@+id/btnList"
+        app:layout_constraintTop_toTopOf="@+id/ibLightMode"/>
+
+    <ImageButton
+        android:id="@+id/ibLightMode"
+        android:layout_width="@dimen/small_ib_dimension"
+        android:layout_height="@dimen/small_ib_dimension"
+        android:layout_marginBottom="@dimen/little_ib_margin"
+        android:background="@drawable/circle_button_grey_selector"
+        android:src="@drawable/ic_light_mode"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ibTheme"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

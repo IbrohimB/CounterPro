@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Defaults  -->
+    <dimen name="very_small_padding">4dp</dimen>
+    <dimen name="little_padding">6dp</dimen>
+    <dimen name="small_padding">8dp</dimen>
+    <dimen name="average_padding">10dp</dimen>
+    <dimen name="medium_padding">16dp</dimen>
+    <dimen name="large_padding">24dp</dimen>
+
+    <dimen name="small_text_size">10sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="large_text_size">18sp</dimen>
+    <dimen name="larger_text_size">28sp</dimen>
+    <dimen name="enormous_text_size">48sp</dimen>
+
+    <dimen name="rounded_8">8dp</dimen>
+    <dimen name="rounded_6">6dp</dimen>
+    <dimen name="rounded_4">4dp</dimen>
+
+    <!--  Project Related  -->
+    <!--todo:[done] odamga o'xshagan dimen ismlar bo'lsin -->
+    <dimen name="average_item_height">60dp</dimen>
+    <dimen name="zikr_item_padding">2dp</dimen>
+    <dimen name="tasbih_view_width">250dp</dimen>
+    <dimen name="tasbih_view_height">350dp</dimen>
+    <dimen name="tvCounter_margin">50dp</dimen>
+    <dimen name="tasbih_middle_buttons_margin_top">140dp</dimen>
+    <!--todo:[done] xullas bu ham o'zgartir -->
+    <!--todo: [done,approved]shuni image_button_size -->
+    <dimen name="little_ib_dimension">24dp</dimen>
+    <dimen name="small_ib_dimension">42dp</dimen>
+    <dimen name="medium_ib_dimension">56dp</dimen>
+    <dimen name="large_ib_dimension">100dp</dimen>
+    <!--todo: [done] o'zini view'sini ismiga mos bir nima yoz -->
+    <dimen name="big_ib_dimension">120dp</dimen>
+    <dimen name="huge_ib_dimesion">180dp</dimen>
+
+    <dimen name="tiny_ib_margin">2dp</dimen>
+    <dimen name="little_ib_margin">16dp</dimen>
+    <dimen name="small_ib_margin">28dp</dimen>
+
+    <dimen name="little_menu_list_margin">6dp</dimen>
+    <dimen name="small_menu_list_margin">8dp</dimen>
+    <dimen name="medium_image_view_margin">16dp</dimen>
+    <dimen name="icon_medium_size_dimension">24dp</dimen>
+
+
+</resources>

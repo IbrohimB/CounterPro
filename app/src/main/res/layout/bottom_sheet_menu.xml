@@ -1,0 +1,213 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/notificationsButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_notifications"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/notifications"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/dynamicTouchButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_dynamic_touch"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/dynamic_touch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+    <!--  todo: [done] mashu knopkadaka backgorund qilib chiq hammasini  -->
+    <LinearLayout
+        android:id="@+id/shareAppButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_share_app"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/share_app"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rateUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_rate_us"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/rate_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/contactUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_contact_us"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/contact_us"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/termsOfUse"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_terms_of_use"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/terms_of_use"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/privacyPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/average_item_height"
+        android:layout_margin="@dimen/little_menu_list_margin"
+        android:background="@drawable/selector_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_image_view_margin"
+            android:src="@drawable/ic_privacy_policy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_menu_list_margin"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/large_text_size"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/circle_light_blue" />
+    <!--  todo: rounded dimens  -->
+    <corners android:radius="@dimen/rounded_8" />
+</shape>
